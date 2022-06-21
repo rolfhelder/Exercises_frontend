@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" data-darkreader-mode="dynamic" data-darkreader-scheme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style_form.css">
+</head>
+<body>
+    <!--Dark mode buttons-->
+    <button onclick="darkMode()">Darkmode</button>
+    <button onclick="lightMode()">LightMode</button>
+    <script>
+      function darkMode() {
+        var element = document.body;
+        var content = document.getElementById("DarkModetext");
+        element.className = "dark-mode";
+        content.innerText = "Dark Mode is ON";
+      }
+      function lightMode() {
+        var element = document.body;
+        var content = document.getElementById("DarkModetext");
+        element.className = "light-mode";
+        content.innerText = "Dark Mode is OFF";
+      }
+    </script>
+
+    <form action="" method="post" name="form_msg">
+        <fieldset name="Form_mensagem">
+            <legend>Contato</legend>
+
+            <label for="nome">Nome</label> <br>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" size="50"> 
+            <br> <br>
+            <label for="email">Email</label> <br>
+            <input type="email" id="email" name="email" placeholder="email@provedor.com.br" size="50"> 
+            <br> <br>
+            <label for="mensagem">Mensagem</label> <br>
+            <textarea name="Mensagem" id="mensagem" name="mensagem" cols="50vw" rows="10" placeholder="Digite sua mensagem"></textarea>
+            <br> <br>
+            <button type="submit" id="button_enviar">Enviar</button>
+        </fieldset>
+    </form>
+
+    
+</body>
+</html>

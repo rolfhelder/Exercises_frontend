@@ -1,0 +1,16 @@
+html{
+    --photoBorderColor: gray;
+    --BgColor: rgb(39, 39, 39);
+     
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.8rem;
+}
+img{
+    width: 30%;
+    height: auto;
+}

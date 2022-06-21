@@ -1,0 +1,22 @@
+.container{
+    display: flex;
+    justify-content: center;
+    gap: 0.4rem;
+}
+
+.trash{
+    width: 1.5rem;
+}
+
+.buy{
+    width: 1.5rem;
+}
+
+button{
+    background-color: cornflowerblue;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    line-height: 0; /* alinha texto em botão com melhor precisão*/
+    gap: 0.4rem;
+}

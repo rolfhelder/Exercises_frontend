@@ -1,0 +1,126 @@
+:root {
+    --body-bg-color: #121214;
+    --text-color: #E1E1E6;
+    --title-color: #04D361;
+    --form-color: #A8A8A8;
+    --bg-button-color: #8257e5;
+    background-color: var(--body-bg-color);
+    font-family: Spartan, Work Sans;
+    font-weight: 400, 500, 700;
+    color: var(--text-color);
+    margin: 50px;
+}
+
+h1{
+    color: var(--title-color);
+    margin-bottom: 0;
+    font-size: 20px;
+}
+
+fieldset{
+    border-color: var(--body-bg-color);
+    padding: 0;
+    display: flex;
+}
+input{
+    border-color: var(--body-bg-color);
+    border-width: 0 0 0 5px;
+    border-left-color: var(--title-color);
+    padding: 0;
+    height: 40px;
+    width: 55vw; 
+}
+button{
+    border-width: 0;
+}
+legend{
+    color: var(--form-color); 
+}
+
+#button_enviar{
+    background-color: var(--bg-button-color); 
+    border-color: var(--body-bg-color);       
+}
+#arrow-right{
+    padding: 5px 6px;
+    background-color: var(--body-bg-color);
+    margin-top: 0;
+}
+#rocket_news-logo{
+    object-position: center;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0px;
+    grid-template-rows: repeat(19, 1fr);
+    height: 100vh;
+    width: 100vw;
+}
+    .logo{
+        grid-column: 1;
+        grid-row: 2;
+        display: flex;
+    }
+    .texto {
+        grid-column: 1;
+        grid-row: 10;
+    }
+    .form {
+        grid-column: 1;
+        grid-row: 12;
+        display: flex;
+    }
+    .link {
+        grid-column: 1;
+        grid-row: 14;
+        color: var(--bg-button-color);
+    }
+    .foto {
+        grid-column: 2;
+        grid-row: 1 / 10;
+        
+    }
+    
+    .font-form{
+        color: var(--form-color);
+    }
+    
+ /*  
+ 
+ div { 
+    border: solid aquamarine; 
+}
+ #legenda{
+            color: var(--form-color);
+            border-color: var(--body-bg-color);
+}
+ 
+    .wrapper {
+        display: grid;
+        grid-template-columns: 50vw 50vw;
+        height: 100vh;
+        width: 100vw;
+    }
+        .logo{
+            grid-column: 1;
+            display: flex;
+        }
+        .foto {
+            grid-column: 2;
+        }
+        .texto {
+            grid-column: 1;
+            
+        }
+        .form {
+            grid-column: 1;
+            
+        }
+        .link {
+            grid-column: 1;
+            color: var(--bg-button-color);
+        }
+ */       
+      

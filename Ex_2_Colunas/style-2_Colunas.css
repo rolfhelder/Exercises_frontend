@@ -1,0 +1,28 @@
+html{
+    --asideBorderColor: gray;
+    --asideBgColor: rgb(39, 39, 39);
+    --sectionBorderColor: gray;
+    --sectionBgColor: rgb(39, 39, 39);   
+}
+
+header{
+    height: 10vh;
+}
+main{
+    display: flex;
+    gap: 1rem;
+}
+
+aside{
+    border: 2px solid var(--asideBorderColor);
+    background-color: var(--asideBgColor);
+    flex: 0 25%;
+    height: 90vh;
+}
+
+section{
+    border: 2px solid var(--sectionBorderColor);
+    background-color: var(--sectionBgColor);
+    flex: 1;
+    height: 90vh;
+}
